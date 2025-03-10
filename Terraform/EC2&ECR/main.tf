@@ -12,7 +12,7 @@ data "aws_vpc" "default_vpc" {
 #   key_name   = var.key_pair_name
 #   public_key = file("~/.ssh/vockey.pem") # Make sure this path is correct
 # }
-
+# Added Workflow trigger
 # Create Security Group for EC2 instance to allow necessary traffic
 resource "aws_security_group" "my_ec2_security_group" {
   name        = "my-ec2-sg"
